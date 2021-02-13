@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { DataChild } from "../fetchingDataFrmJSON/Datachild";
+import { personDetailsReducer } from "../../components/State/Reducer/personDetailsReducer";
 
 export const DataParent =()=>{
     const {personDetails, SetPersonData}=useState();
