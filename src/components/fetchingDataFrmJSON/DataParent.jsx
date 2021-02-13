@@ -5,8 +5,12 @@ import { personDetailsReducer } from "../State/Reducer/personDetailsReducer";
 export const DataParent =()=>{
     return(
         <div>
-            
-            <DataChild/>
+            {personDetailsReducer.personDetails.map((fetchData) => {
+                return <DataChild itemCurrent={fetchData}/>
+                
+            })
+            };
+
         </div>
     );
 };
