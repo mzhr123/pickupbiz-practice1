@@ -5,6 +5,7 @@ import { MapingParent } from './components/Maping/MapingParent';
 import { Usestateparent } from "./components/(usestate)infuntioncomp/Usestateparent";
 import { Parent } from "./components/propswithfuntioncom/Parent";
 import Parentcc from "./components/propswithclasscom/Parentcc"
+import { DataParent } from './components/fetchingDataFrmJSON/DataParent';
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,9 @@ function App() {
 
       {/* <CounterPractice/> */}
 
-      <MapingParent/>
+      {/* <MapingParent/> */}
+
+      <DataParent/>
 
     </div>
   );
