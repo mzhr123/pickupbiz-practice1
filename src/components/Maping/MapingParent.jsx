@@ -9,7 +9,7 @@ export const MapingParent =()=>{
         {companyName:"Hyundai", carName:"Verna"},
         {companyName:"Mahindra", carName:"Thar"},
     ];
-    const {companyDetails,setCompanyDetails}=useState(Details);
+    const {companyDetails, setCompanyDetails}=useState(Details);
     return(
         <div>
             {Details.map((fetchData) =>{
