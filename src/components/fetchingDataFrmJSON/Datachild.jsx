@@ -19,7 +19,7 @@ export const Datachild = ({itemCurrent}) => {
     return(
         <div>
             <img src={itemCurrent.image} width="200" height="200"/>
-            <p>the student name is {itemCurrent.name} and his age is {itemCurrent.age} </p>
+            <p>the student name is {itemCurrent.name} and his age is {itemCurrent.age} and his in {itemCurrent.discription} </p>
         </div>
     );
 };
