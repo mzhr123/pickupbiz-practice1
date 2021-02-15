@@ -15,10 +15,11 @@
 
 import React from "react";
 
-export const Datachild = () => {
+export const Datachild = ({itemCurrent}) => {
     return(
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil eos at tempore nemo aspernatur nobis omnis! Dolores similique rerum accusantium perspiciatis quidem aperiam doloremque praesentium quo adipisci, corrupti magnam.</p>
+            <img src={itemCurrent.image} width="200" height="200"/>
+            <p>the student name is {itemCurrent.name} and his age is {itemCurrent.age} </p>
         </div>
     );
 };
