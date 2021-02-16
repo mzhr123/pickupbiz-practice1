@@ -1,8 +1,8 @@
-const GroupReducer =(state=groupsDefaultState,action)=>{
+export const GroupReducer =(state=groupsDefaultState,action)=>{
     switch(action,type){
         case "ADD_NEW_GROUP":
-            return{...state,               //(...) is denfined by spread operator
-                gropus:[action.group]
+            return{...state,                      //(...) is denfined by spread operator
+                gropus:[...state.gropus,action.groups]
             }                   
     }
 };
